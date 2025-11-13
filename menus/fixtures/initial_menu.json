@@ -1,0 +1,138 @@
+[
+{
+  "model": "menus.menu",
+  "pk": 1,
+  "fields": {
+    "name": "main_menu",
+    "verbose_name": "Главное меню"
+  }
+},
+{
+  "model": "menus.menu",
+  "pk": 2,
+  "fields": {
+    "name": "footer_menu",
+    "verbose_name": "Подвал"
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 1,
+  "fields": {
+    "menu": 1,
+    "parent": null,
+    "title": "Главная",
+    "url": "",
+    "named_url": "index",
+    "sort_order": 1
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 5,
+  "fields": {
+    "menu": 1,
+    "parent": 3,
+    "title": "Смартфоны",
+    "url": "",
+    "named_url": "phones",
+    "sort_order": 1
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 6,
+  "fields": {
+    "menu": 1,
+    "parent": 5,
+    "title": "Apple",
+    "url": "",
+    "named_url": "apple",
+    "sort_order": 1
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 7,
+  "fields": {
+    "menu": 2,
+    "parent": null,
+    "title": "Телеграмм создателя",
+    "url": "https://t.me/dariacross",
+    "named_url": "",
+    "sort_order": 1
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 9,
+  "fields": {
+    "menu": 1,
+    "parent": 6,
+    "title": "Iphone 17",
+    "url": "",
+    "named_url": "iphone17",
+    "sort_order": 1
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 2,
+  "fields": {
+    "menu": 1,
+    "parent": null,
+    "title": "О нас",
+    "url": "",
+    "named_url": "about",
+    "sort_order": 2
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 4,
+  "fields": {
+    "menu": 1,
+    "parent": 3,
+    "title": "Ноутбуки",
+    "url": "",
+    "named_url": "notebooks",
+    "sort_order": 2
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 8,
+  "fields": {
+    "menu": 2,
+    "parent": null,
+    "title": "Политика конфиденциальности",
+    "url": "",
+    "named_url": "confidentiality",
+    "sort_order": 2
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 10,
+  "fields": {
+    "menu": 1,
+    "parent": 6,
+    "title": "Iphone 16",
+    "url": "",
+    "named_url": "iphone16",
+    "sort_order": 2
+  }
+},
+{
+  "model": "menus.menuitem",
+  "pk": 3,
+  "fields": {
+    "menu": 1,
+    "parent": null,
+    "title": "Каталог",
+    "url": "",
+    "named_url": "catalog",
+    "sort_order": 3
+  }
+}
+]
