@@ -1,0 +1,28 @@
+{% load static %}
+{% load menu_tags %}
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Меню</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <nav>
+            {% draw_menu 'main_menu' %}
+        </nav>
+
+        <hr>
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+
+        <hr>
+
+        <footer>
+            {% draw_menu 'footer_menu' %}
+        </footer>
+    </body>
+</html>

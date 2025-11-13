@@ -1,0 +1,31 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# venv
+venv/
+.env
+.env.*
+
+
+# === Django / SQLite ===
+db.sqlite3
+*.sqlite3
+
+# Django collectstatic (если будешь использовать)
+staticfiles/
+static_root/
+
+
+# === IDE / редакторы ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === OS junk ===
+.DS_Store
+Thumbs.db
+
+# === Logs / прочее ===
+*.log

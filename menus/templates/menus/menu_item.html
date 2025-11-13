@@ -1,0 +1,16 @@
+<li
+    class="
+        menu-item
+        {% if active_item and item.id == active_item.id %} menu-item--active{% endif %}
+    "
+>
+    <a href="{{ item.resolved_url }}">{{ item.title }}</a>
+
+    {% if item.id in open_ids and item.children_list %}
+        <ul>
+            {% for child in item.children_list %}
+                {% include "menus/menu_item.html" with item=child open_ids=open_ids active_item=active_item %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+</li>
