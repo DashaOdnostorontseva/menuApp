@@ -20,8 +20,7 @@ main {
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-
-    flex: 1;              /* вот это главное */
+    flex: 1;
 }
 
 h1 {
@@ -88,7 +87,7 @@ nav {
     padding: 6px 16px;
 }
 
-/* Футер и меню в подвале */
+/* Подвал */
 footer {
     padding: 16px 20px 24px;
     background: #111827;

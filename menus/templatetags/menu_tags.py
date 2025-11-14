@@ -10,19 +10,19 @@ register = template.Library()
 def draw_menu(context, menu_name):
     """
     Рисует меню по имени: {% draw_menu 'main_menu' %}
-    ДОЛЖЕН сделать ровно 1 запрос к БД.
+    Делает один запрос к БД.
     """
     request = context['request']
     current_path = request.path
 
-    # === 1 запрос к БД ===
+    # 1 запрос к БД
     items_qs = (
         MenuItem.objects
         .filter(menu__name=menu_name)
         .select_related('parent', 'menu')
         .order_by('sort_order', 'id')
     )
-    items = list(items_qs)  # материализуем queryset
+    items = list(items_qs)
 
     # Собираем детей и ищем активный пункт
     children_map = {}
